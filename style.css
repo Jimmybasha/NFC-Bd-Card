@@ -157,7 +157,232 @@ LOADER
     filter:drop-shadow(0 0 30px rgba(255,80,130,.65));
 
 }
+/* ==========================================
+   FINAL SURPRISE
+========================================== */
 
+.final-surprise{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.82);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.45s ease;
+
+    z-index:99999999;
+
+}
+
+
+.final-surprise.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+.surprise-card{
+
+    position:relative;
+
+    width:min(92%,520px);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.12),
+        rgba(255,255,255,.04)
+    );
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:
+
+        0 35px 80px rgba(0,0,0,.45),
+
+        0 0 50px rgba(255,120,170,.15);
+
+    transform:translateY(40px) scale(.9);
+
+    transition:.45s ease;
+
+}
+
+
+.final-surprise.show .surprise-card{
+
+    transform:translateY(0) scale(1);
+
+}
+
+
+
+.surprise-card h2{
+
+    font-size:2.2rem;
+
+    margin-bottom:20px;
+
+    font-family:"Cormorant Garamond",serif;
+
+}
+
+
+
+.surprise-card p{
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.85);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.surprise-card img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+    box-shadow:
+
+        0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+.close-surprise{
+
+    position:absolute;
+
+    top:15px;
+
+    right:18px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+.close-surprise:hover{
+
+    background:#ff4f8b;
+
+    transform:rotate(90deg) scale(1.1);
+
+}
+
+
+
+@keyframes floatingHearts{
+
+    0%{
+
+        transform:translateY(0) scale(1);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-200px) scale(1.8);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+.final-surprise::before,
+
+.final-surprise::after{
+
+    content:"❤️";
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:floatingHearts 4s linear infinite;
+
+}
+
+
+.final-surprise::before{
+
+    left:12%;
+
+    bottom:0;
+
+}
+
+
+.final-surprise::after{
+
+    right:15%;
+
+    bottom:-30px;
+
+    animation-delay:1.5s;
+
+}
 #loader h2{
 
     margin-top:30px;

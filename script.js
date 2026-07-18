@@ -1458,7 +1458,7 @@ if(giftBox){
     giftBox.addEventListener(
         "click",
         ()=>{
-
+            console.log("🎁 Gift clicked");
 
             giftBox.classList.add(
                 "opening"
@@ -1508,6 +1508,7 @@ if(giftBox){
                 document.body.appendChild(
                     surprise
                 );
+                    console.log("Popup created", surprise);
 
 
                 const closeButton =
