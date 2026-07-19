@@ -3750,13 +3750,6 @@ line-height:1.8;
 
 }
 
-#startButton{
-
-width:100%;
-
-max-width:320px;
-
-}
 
 .glass{
 
@@ -4266,4 +4259,22 @@ END OF PART 7
 
     box-shadow:0 0 15px rgba(255,255,255,.2);
 
+}
+
+#startButton{
+    display:inline-flex !important;
+    opacity:1 !important;
+    visibility:visible !important;
+
+    position:relative !important;
+    z-index:999999 !important;
+
+    background:#ff4d88 !important;
+    color:white !important;
+
+    padding:18px 40px !important;
+    border:none !important;
+    border-radius:40px !important;
+
+    font-size:20px !important;
 }
