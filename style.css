@@ -4272,9 +4272,39 @@ END OF PART 7
     background:#ff4d88 !important;
     color:white !important;
 
-    padding:18px 40px !important;
-    border:none !important;
-    border-radius:40px !important;
+    padding:15 30px !important;
+    border-radius:50px !important;
 
     font-size:20px !important;
+      backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 10px 30px rgba(255,70,120,.35);
+
 }
+/* #startButton{
+
+    padding:14px 32px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:rgba(255,70,120,.88);
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+  
+} */
