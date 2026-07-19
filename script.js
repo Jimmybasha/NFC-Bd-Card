@@ -2087,83 +2087,45 @@ window.addEventListener(
 
 function setupBlurTransition(){
 
-
     const sections =
-    document.querySelectorAll(
-        "section"
-    );
+    document.querySelectorAll("section");
 
-
-
-    const observer =
-    new IntersectionObserver(
+    const observer = new IntersectionObserver(
 
         entries=>{
 
+            entries.forEach(entry=>{
 
-            entries.forEach(
-                entry=>{
+                if(entry.isIntersecting){
 
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
 
-                    if(
-                        entry.isIntersecting
-                    ){
+                }else{
 
-
-                        entry.target
-                        .style.filter =
-                        "blur(0px)";
-
-
-
-                    }
-                    else{
-
-
-                        entry.target
-                        .style.filter =
-                        "blur(6px)";
-
-
-                    }
-
-
+                    entry.target.style.opacity = ".6";
+                    entry.target.style.transform = "translateY(30px)";
 
                 }
-            );
 
+            });
 
         },
 
-        {
-            threshold:.1
-        }
+        { threshold:.15 }
 
     );
 
+    sections.forEach(section=>{
 
+        section.style.transition =
+        "opacity .8s ease, transform .8s ease";
 
-    sections.forEach(
-        section=>{
+        observer.observe(section);
 
-
-            section.style.transition =
-            "filter 1s ease";
-
-
-
-            observer.observe(
-                section
-            );
-
-
-        }
-    );
-
-
+    });
 
 }
-
 
 
 window.addEventListener(
