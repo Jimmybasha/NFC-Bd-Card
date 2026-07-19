@@ -14,6 +14,8 @@ const birthdayConfig = {
         "images/hero.jpg",
 
 
+    giftImage:
+    "images/13.jpeg",
     // Music
     music: {
 
@@ -127,8 +129,91 @@ const birthdayConfig = {
 
             caption:
             "My favorite person"
-        }
+        },
 
+
+        {
+            image:
+            "images/6.jpeg",
+
+            caption:
+            "love you loza"
+        },
+
+
+        {
+            image:
+            "images/8.jpeg",
+
+            caption:
+            "Our Comeback"
+        },
+        
+        
+
+        {
+            image:
+            "images/9.jpeg",
+
+            caption:
+            "Makarona l Insgaaaaam"
+        },
+        
+        {
+            image:
+            "images/10.jpeg",
+
+            caption:
+            "Cutieeeeeee Jojaa"
+        },
+
+         {
+            image:
+            "images/11.jpeg",
+
+            caption:
+            "Some Selfieeeeeeees"
+        },
+
+
+        
+         {
+            image:
+            "images/12.jpeg",
+
+            caption:
+            "Ma Birthdayyyyyyyyyyyyyyyy"
+        },
+         {
+            image:
+            "images/13.jpeg",
+
+            caption:
+            "Studying Timeeeee"
+        },
+         {
+            image:
+            "images/14.jpeg",
+
+            caption:
+            "Molokhyaaaaaaa bl lahma"
+        },
+
+
+         {
+            image:
+            "images/15.jpeg",
+
+            caption:
+            "Ma Birthdayyyyyyyyyyyyyyyy Agaaain"
+        },
+         {
+            image:
+            "images/16.jpeg",
+
+            caption:
+            "More Bike Rideeees"
+        },
     ],
 
 

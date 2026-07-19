@@ -1497,7 +1497,7 @@ if(giftBox){
                         </p>
 
 
-                        <img src="images/hero.jpg">
+                        <img src="images/7.jpeg">
 
 
                     </div>
