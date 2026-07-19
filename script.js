@@ -617,7 +617,7 @@ function createGallery(){
 
                 <img
                 src="${photo.image}"
-                loading="lazy"
+                loading="eager"
                 alt="memory"
                 >
 
